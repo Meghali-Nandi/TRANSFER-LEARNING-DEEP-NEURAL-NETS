@@ -67,12 +67,12 @@ num_classes = 4
 num_of_samples = img_data.shape[0]
 labels = np.ones((num_of_samples,),dtype='int64')
 
-#vgg16 has 1000 classes defined in the FC layer. As we need to classify our images into 4 classes
+#The dataset has 1000 images. As we need to classify our images into 4 classes
 #we define the pretrained classes into 4 classes as we define below
-labels[0:202]=0
-labels[202:404]=1
-labels[404:606]=2
-labels[606:]=3
+labels[0:251]=0
+labels[251:501]=1
+labels[501:751]=2
+labels[751:]=3
 
 #names of classes
 #hahaha.... humans!
